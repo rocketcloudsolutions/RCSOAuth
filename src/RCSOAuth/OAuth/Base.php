@@ -62,10 +62,10 @@ class Base {
                 $_SESSION['token'] = $access_token_info['oauth_token'];
                 $_SESSION['secret'] = $access_token_info['oauth_token_secret'];
             }
+
             $oauth->setToken($_SESSION['token'],$_SESSION['secret']);
-            error_log("about to run fetch", 1,
-                "dustinmoorman@gmail.com");
             $oauth->fetch("{$this->api_url}$command");
+
             $json = json_decode($oauth->getLastResponse());
 
         } catch(\OAuthException $E) {
