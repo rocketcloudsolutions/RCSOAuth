@@ -43,8 +43,10 @@ class Base {
         if(!isset($_GET['oauth_token']) && $_SESSION['state']==1) $_SESSION['state'] = 0;
 
         try {
+
             $oauth = new \OAuth($this->consumer_key,$this->consumer_secret,OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_URI);
             $oauth->enableDebug();
+
             if(!isset($_GET['oauth_token']) && !$_SESSION['state']) {
                 $request_token_info = $oauth->getRequestToken($this->request_url);
                 $_SESSION['secret'] = $request_token_info['oauth_token_secret'];
