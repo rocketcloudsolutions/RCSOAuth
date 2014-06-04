@@ -1,0 +1,30 @@
+{
+    "name": "rocketcloudsolutions/rcsoauth",
+    "description": "OAuth 2.0 Zend Framework 2 module.",
+    "type": "zf-module",
+    "license": "MIT",
+    "homepage": "https://github.com/rocketcloudsolutions/RCSOAuth",
+    "authors": [
+        {
+            "name": "Dustin Moorman",
+            "email": "dustin.moorman@gmail.com",
+            "homepage": "http://dustinmoorman.com/"
+        }
+    ],
+    "require": {
+        "zendframework/zendframework": "~2",
+        "zf-commons/zfc-admin": "dev-master",
+        "zf-commons/zfc-user-doctrine-orm": "~0"
+    },
+    "suggest": {
+
+    },
+    "autoload": {
+        "psr-0": {
+            "WdgSimpleAdminBundle": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
