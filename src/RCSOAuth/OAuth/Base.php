@@ -47,8 +47,6 @@ class Base {
             $oauth->enableDebug();
             if(!isset($_GET['oauth_token']) && !$_SESSION['state']) {
                 $request_token_info = $oauth->getRequestToken($this->request_url);
-                error_log("Req token info " . $request_token_info, 1,
-                    "dustinmoorman@gmail.com");
                 $_SESSION['secret'] = $request_token_info['oauth_token_secret'];
                 $_SESSION['state'] = 1;
                 header('Location: '.$this->authorize_url.'?oauth_token='.$request_token_info['oauth_token']);
