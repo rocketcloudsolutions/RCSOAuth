@@ -3,6 +3,12 @@
     "description": "OAuth 2.0 Zend Framework 2 module.",
     "type": "zf-module",
     "license": "MIT",
+    "keywords": [
+        "OAuth",
+        "rocket cloud solutions",
+        "OAuth 2.0",
+        "rcs"
+    ],
     "homepage": "https://github.com/rocketcloudsolutions/RCSOAuth",
     "authors": [
         {
