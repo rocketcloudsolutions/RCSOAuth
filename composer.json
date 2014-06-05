@@ -25,7 +25,8 @@
     "require": {
         "zendframework/zendframework": "~2",
         "zf-commons/zfc-admin": "dev-master",
-        "zf-commons/zfc-user-doctrine-orm": "~0"
+        "zf-commons/zfc-user-doctrine-orm": "~0",
+        "rocketcloudsolutions/rcsdoctrine2": "dev-master"
     },
     "suggest": {
 
