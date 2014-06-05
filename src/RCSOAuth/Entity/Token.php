@@ -3,9 +3,8 @@
 namespace RCSOAuth\Entity;
 
 use Doctrine\ORM\Mapping as ORM,
-    \Doctrine\Common\Collections\ArrayCollection,
-    \LDNiche\Entity\Niche;
-
+    \Doctrine\Common\Collections\ArrayCollection;
+    
 /**
  * Category table entity.
  * @ORM\Entity
